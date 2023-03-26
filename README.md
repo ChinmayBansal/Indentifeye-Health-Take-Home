@@ -9,7 +9,7 @@ This program contains 9 test files including the sample input provided in the pd
 ### Sample.txt
 
 #### Input
-ADD PATIENT 123 JOHN DOE
+ADD PATIENT 123 JOHN DOE <br />
 ADD PATIENT 321 JOE SCMOE
 ADD PATIENT 321 JOHN SNOW
 ADD PATIENT 789 JANE CROW
