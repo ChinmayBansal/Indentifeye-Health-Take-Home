@@ -10,22 +10,22 @@ This program contains 9 test files including the sample input provided in the pd
 
 #### Input
 ADD PATIENT 123 JOHN DOE <br />
-ADD PATIENT 321 JOE SCMOE
-ADD PATIENT 321 JOHN SNOW
-ADD PATIENT 789 JANE CROW
-ADD EXAM 321 444
-ADD EXAM 789 445
-ADD EXAM 789 554
-DEL PATIENT 321
+ADD PATIENT 321 JOE SCMOE <br />
+ADD PATIENT 321 JOHN SNOW <br />
+ADD PATIENT 789 JANE CROW <br />
+ADD EXAM 321 444 <br />
+ADD EXAM 789 445 <br />
+ADD EXAM 789 554 <br />
+DEL PATIENT 321 <br />
 
 #### Expected Output
-Name: JOHN DOE, Id: 123, Exam Count: 0
+Name: JOHN DOE, Id: 123, Exam Count: 0 <br />
 Name: JANE CROW, Id: 789, Exam Count: 2
 
 ### Test1.txt
 
 #### Input
-ADD PATIENT 123 JOHN DOE
+ADD PATIENT 123 JOHN DOE <br />
 ADD PATIENT 123 JOHN SNOW
 
 ##### Expected Output
@@ -39,11 +39,11 @@ This test case tests for adding a patient with the same patient ID.
 ### Test2.txt
 
 #### Input
-ADD PATIENT 123 JOHN DOE
-ADD EXAM 123 456
-ADD EXAM 234 456
-ADD EXAM 123 456
-ADD EXAM 456 790
+ADD PATIENT 123 JOHN DOE <br />
+ADD EXAM 123 456 <br />
+ADD EXAM 234 456 <br />
+ADD EXAM 123 456 <br />
+ADD EXAM 456 790 <br />
 
 ##### Expected Output
 Name: JOHN DOE, Id: 123, Exam Count: 1
@@ -56,15 +56,15 @@ This test case tests for adding an exam with an exam ID that already exists and 
 ### Test3.txt
 
 #### Input
-ADD PATIENT 123 JOHN DOE
-DEL PATIENT 123
-DEL PATIENT 123
-ADD PATIENT 456 JOHN SNOW
-ADD PATIENT 123 JOHN DOE
+ADD PATIENT 123 JOHN DOE <br />
+DEL PATIENT 123 <br />
+DEL PATIENT 123 <br />
+ADD PATIENT 456 JOHN SNOW <br />
+ADD PATIENT 123 JOHN DOE <br />
 
 ##### Expected Output
-Name: JOHN SNOW, Id: 456, Exam Count: 0
-Name: JOHN DOE, Id: 123, Exam Count: 0
+Name: JOHN SNOW, Id: 456, Exam Count: 0 <br />
+Name: JOHN DOE, Id: 123, Exam Count: 0 <br />
 
 ##### What it tests for
 This test case tests for deleting a patient ID that does not exist.
@@ -73,14 +73,14 @@ This test case tests for deleting a patient ID that does not exist.
 ### Test4.txt
 
 #### Input
-ADD PATIENT 123 JOHN DOE
-DEL PATIENT 123
-ADD PATIENT 456 JOHN SNOW
-ADD EXAM 456 123
-ADD PATIENT 123 JOHN DOE
-ADD EXAM 123 123
+ADD PATIENT 123 JOHN DOE <br />
+DEL PATIENT 123 <br />
+ADD PATIENT 456 JOHN SNOW <br />
+ADD EXAM 456 123 <br />
+ADD PATIENT 123 JOHN DOE <br />
+ADD EXAM 123 123 <br />
 ##### Expected Output
-Name: JOHN SNOW, Id: 456, Exam Count: 1
+Name: JOHN SNOW, Id: 456, Exam Count: 1 <br />
 Name: JOHN DOE, Id: 123, Exam Count: 1
 
 ##### What it tests for
@@ -91,16 +91,16 @@ This test case tests for adding the same exam to two patients
 ### Test5.txt
 
 #### Input
-ADD PATIENT 123 JOHN DOE
-DEL PATIENT 123
-DEL PATIENT 456
-ADD PATIENT 456 JOHN SNOW
-ADD EXAM 456 123
-ADD PATIENT 123 JOHN DOE
-ADD EXAM 123 123
-DEL EXAM 123
+ADD PATIENT 123 JOHN DOE <br />
+DEL PATIENT 123 <br />
+DEL PATIENT 456 <br />
+ADD PATIENT 456 JOHN SNOW <br />
+ADD EXAM 456 123 <br />
+ADD PATIENT 123 JOHN DOE <br />
+ADD EXAM 123 123 <br />
+DEL EXAM 123 <br />
 ##### Expected Output
-Name: JOHN SNOW, Id: 456, Exam Count: 0
+Name: JOHN SNOW, Id: 456, Exam Count: 0 <br />
 Name: JOHN DOE, Id: 123, Exam Count: 0
 
 ##### What it tests for
@@ -110,13 +110,13 @@ This test case tests for adding the same exam to two patients and then deleting 
 ### Test6.txt
 
 #### Input
-ADD PATIENT 123 JOHN DOE
-ADD EXAM 123 456
-ADD EXAM 123 789
-ADD EXAM 123 234
-DEL PATIENT 123
-ADD PATIENT 123 JOHN DOE
-ADD EXAM 123 456
+ADD PATIENT 123 JOHN DOE <br />
+ADD EXAM 123 456 <br />
+ADD EXAM 123 789 <br />
+ADD EXAM 123 234 <br />
+DEL PATIENT 123 <br />
+ADD PATIENT 123 JOHN DOE <br />
+ADD EXAM 123 456 <br />
 ##### Expected Output
 Name: JOHN DOE, Id: 123, Exam Count: 1
 
@@ -127,9 +127,9 @@ This test case tests for adding muliple exams to one patient and then deleting i
 ### Test7.txt
 
 #### Input
-ADD PATIENT 123 JOHN DOE
-ADD EXAM 123 456
-ADD EXAM 123 456
+ADD PATIENT 123 JOHN DOE <br />
+ADD EXAM 123 456 <br />
+ADD EXAM 123 456 <br />
 
 ##### Expected Output
 Name: JOHN DOE, Id: 123, Exam Count: 1
@@ -141,11 +141,11 @@ This test case tests for adding the two exams that are the same to one patient.
 ### Test8.txt
 
 #### Input
-ADD PATIENT 123 JOHN DOE
-ADD PATIENT 456 JOHN SNOW
-ADD EXAM 123 789
-ADD EXAM 456 789
-DEL PATIENT 123
+ADD PATIENT 123 JOHN DOE <br />
+ADD PATIENT 456 JOHN SNOW <br />
+ADD EXAM 123 789 <br />
+ADD EXAM 456 789 <br />
+DEL PATIENT 123 <br />
 
 
 ##### Expected Output
