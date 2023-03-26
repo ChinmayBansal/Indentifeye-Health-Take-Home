@@ -102,8 +102,8 @@ function summarizePatients() {
     console.log(`Name: ${patient.nameOrExamID}, Id: ${id}, Exam Count: ${patient.patientExams.size}`);
   }
 }
-
-fs.readFile('test8.txt', 'utf-8', (err, data) => {
+//Specify .txt file
+fs.readFile('test2.txt', 'utf-8', (err, data) => {
   if (err) throw err;
 
   // Read file and split into an array where each index is one line
